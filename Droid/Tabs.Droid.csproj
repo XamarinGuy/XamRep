@@ -39,6 +39,21 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ButtonCircle.FormsPlugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Plugins.Forms.ButtonCircle.1.2.47\lib\MonoAndroid10\ButtonCircle.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="ButtonCircle.FormsPlugin.Android, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Plugins.Forms.ButtonCircle.1.2.47\lib\MonoAndroid10\ButtonCircle.FormsPlugin.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie, Version=1.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.Airbnb.Android.Lottie.2.1.2.0\lib\MonoAndroid40\Lottie.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms, Version=1.0.6430.20510, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.3.1\lib\MonoAndroid70\Lottie.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Lottie.Forms.Droid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.Airbnb.Xamarin.Forms.Lottie.2.3.1\lib\MonoAndroid70\Lottie.Forms.Droid.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.ProjectOxford.Vision, Version=1.0.393.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ProjectOxford.Vision.1.0.393\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+xamarinios10+MonoTouch10\Microsoft.ProjectOxford.Vision.dll</HintPath>
     </Reference>
@@ -153,6 +168,8 @@
     <Compile Include="MainApplication.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\eye01.json" />
+    <AndroidAsset Include="Assets\traffic_light.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />

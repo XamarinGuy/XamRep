@@ -2,16 +2,25 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Tabs.CustomVision"
-             Title="Custom Vision">
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Title="Our Trained Traffic System">
     <StackLayout Margin="20" Orientation="Vertical">
         <Button Text="Take Photo and Analyze" Clicked="loadCamera" />
         <StackLayout Orientation="Horizontal">
-            
             <Label x:Name="TagLabel">
             </Label>
             <Label x:Name="PredictionLabel">
             </Label>
         </StackLayout>
         <Image x:Name="image" Aspect="AspectFit"/>
+        <forms:AnimationView 
+	x:Name="AnimationView" 
+	Grid.Row="1"
+	Animation="traffic_light.json" 
+	Loop="True" 
+	AutoPlay="True"
+	
+	VerticalOptions="FillAndExpand" 
+	HorizontalOptions="FillAndExpand" />
     </StackLayout>
 </ContentPage>

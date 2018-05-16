@@ -20,6 +20,7 @@ namespace Tabs
         public BlindPage()
         {
             InitializeComponent();
+            this.AnimationView.IsVisible = true;
         }
         private async Task<AnalysisResult> GetImageDescription(Stream imageStream)
         {
@@ -58,6 +59,7 @@ namespace Tabs
         async void Handle_Click(object sender, EventArgs e)
         {
             await SelectPicture();
+            this.AnimationView.IsVisible = false;
         }
     }
 }

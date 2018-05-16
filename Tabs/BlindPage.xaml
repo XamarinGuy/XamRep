@@ -1,10 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Tabs.BlindPage">
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             x:Class="Tabs.BlindPage"
+             Title="Pre-Trained Blind App ">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
                 <RowDefinition/>
@@ -17,7 +20,18 @@
                 <Label x:Name="MyLabel"/>
             </ScrollView>
             <Button x:Name="MyButton" Grid.Row="3" Text="Select picture" Clicked="Handle_Click" BorderRadius="4"/>
+            <forms:AnimationView 
+	x:Name="AnimationView" 
+	Grid.Row="4"
+	Animation="eye01.json" 
+    Scale="0.4"
+	Loop="True" 
+	AutoPlay="True"
+	VerticalOptions="FillAndExpand" 
+	HorizontalOptions="FillAndExpand"/>
+
         </Grid>
+      
     </ContentPage.Content>
 
 </ContentPage>

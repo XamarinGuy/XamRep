@@ -8,7 +8,7 @@ namespace Tabs
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new CustomVision());
+            MainPage = new NavigationPage(new BlindPage());
         }
 
         protected override void OnStart()

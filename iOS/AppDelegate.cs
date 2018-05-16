@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Lottie.Forms.iOS.Renderers;
 using UIKit;
 
 namespace Tabs.iOS
@@ -18,7 +19,7 @@ namespace Tabs.iOS
 #if DEBUG
 			Xamarin.Calabash.Start();
 #endif
-
+            AnimationViewRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

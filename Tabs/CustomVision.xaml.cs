@@ -20,6 +20,7 @@ namespace Tabs
         public CustomVision()
         {
             InitializeComponent();
+            this.AnimationView.IsVisible = true;
         }
 
         private async void loadCamera(object sender, EventArgs e)
