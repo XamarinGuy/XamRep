@@ -67,7 +67,7 @@ namespace Tabs
 
             client.DefaultRequestHeaders.Add("Prediction-Key", "4acc8969a66e4e6a8566c55658bbe9d2");
 
-            string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v1.1/Prediction/ce6463c9-a4b5-4af6-aed2-18babd9f8483/image?iterationId=1ddec163-8098-4387-b095-fa55183c512e";
+            string url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/d1a68296-d332-4042-95e6-b7e27d9108ec/image?iterationId=6a37a80b-d46b-4cb9-ba20-ff9d2d586972";
 
             HttpResponseMessage response;
 

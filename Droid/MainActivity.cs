@@ -8,6 +8,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Lottie.Forms.Droid;
+using ButtonCircle.FormsPlugin.Droid;
 
 namespace Tabs.Droid
 {
@@ -23,7 +24,7 @@ namespace Tabs.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             AnimationViewRenderer.Init();
-
+            ButtonCircleRenderer.Init();
             LoadApplication(new App());
         }
     }

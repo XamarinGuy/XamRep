@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-
+using ButtonCircle.FormsPlugin.iOS;
 using Foundation;
 using Lottie.Forms.iOS.Renderers;
 using UIKit;
@@ -20,6 +20,7 @@ namespace Tabs.iOS
 			Xamarin.Calabash.Start();
 #endif
             AnimationViewRenderer.Init();
+            ButtonCircleRenderer.Init();
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

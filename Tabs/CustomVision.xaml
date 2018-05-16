@@ -3,9 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              x:Class="Tabs.CustomVision"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             xmlns:local="clr-namespace:ButtonCircle.FormsPlugin.Abstractions;assembly=ButtonCircle.FormsPlugin.Abstractions"
              Title="Our Trained Traffic System">
     <StackLayout Margin="20" Orientation="Vertical">
-        <Button Text="Take Photo and Analyze" Clicked="loadCamera" />
+        <!--<Button Text="Traffic-Status" Clicked="loadCamera" BorderRadius="4" BorderWidth="5"/>-->
+        <local:CircleButton 
+        FontSize="30" TextColor="Black" 
+        HeightRequest="70" WidthRequest="70" 
+        BorderThickness="5" BorderColor="Black" 
+        BackgroundColor="#DCDCDC" Clicked="loadCamera">
+        </local:CircleButton>
         <StackLayout Orientation="Horizontal">
             <Label x:Name="TagLabel">
             </Label>
@@ -13,6 +20,7 @@
             </Label>
         </StackLayout>
         <Image x:Name="image" Aspect="AspectFit"/>
+        
         <forms:AnimationView 
 	x:Name="AnimationView" 
 	Grid.Row="1"

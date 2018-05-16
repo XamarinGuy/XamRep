@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+              xmlns:local="clr-namespace:ButtonCircle.FormsPlugin.Abstractions;assembly=ButtonCircle.FormsPlugin.Abstractions"
              x:Class="Tabs.BlindPage"
              Title="Pre-Trained Blind App ">
     <ContentPage.Content>
@@ -19,7 +20,17 @@
             <ScrollView Grid.Row="2">
                 <Label x:Name="MyLabel"/>
             </ScrollView>
-            <Button x:Name="MyButton" Grid.Row="3" Text="Select picture" Clicked="Handle_Click" BorderRadius="4"/>
+
+            <local:CircleButton 
+                x:Name="MyButton"
+       Text="See4Me"
+                Grid.Row="3"
+        FontSize="20" TextColor="Black" 
+        HeightRequest="90" WidthRequest="90" 
+        BorderThickness="5" BorderColor="Black" 
+        BackgroundColor="#DCDCDC" Clicked="Handle_Click">
+            </local:CircleButton>
+
             <forms:AnimationView 
 	x:Name="AnimationView" 
 	Grid.Row="4"
