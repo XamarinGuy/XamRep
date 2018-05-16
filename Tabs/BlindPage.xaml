@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tabs.BlindPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Image x:Name="MyImage" Grid.Row="0" Margin="24"/>
+            <ActivityIndicator x:Name="MyActivityIndicator" Grid.Row="1"/>
+            <ScrollView Grid.Row="2">
+                <Label x:Name="MyLabel"/>
+            </ScrollView>
+            <Button x:Name="MyButton" Grid.Row="3" Text="Select picture" Clicked="Handle_Click" BorderRadius="4"/>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

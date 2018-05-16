@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Tabs.AzureTable"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+       
+        <RelativeLayout>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text=" Traffic Light Proposed Model" FontSize="Large"/>
+            </StackLayout>
+           
+            <Image Source="zcx.jpg"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}"/>
+            <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+              RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+            </Grid>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
